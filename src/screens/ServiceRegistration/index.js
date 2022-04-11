@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { ScrollView, View } from 'react-native'
 import { Picker } from '@react-native-picker/picker'
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
+import Entypo from '@expo/vector-icons/Entypo'
 
 import Dropdown from '../../components/Dropdown'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import { styles } from './styles'
+import { theme } from '../../global/styles/theme'
 
 export default function ServiceRegistration() {
     const [department, setDepartment] = useState('Estética')
@@ -19,7 +20,12 @@ export default function ServiceRegistration() {
         <ScrollView showsHorizontalScrollIndicator={false}>
             <View style={styles.container}>
 
-                <FontAwesome5 style={styles.icon} name='tools' size={90} />
+                <Entypo 
+                    style={styles.icon} 
+                    name='tools' 
+                    size={90}
+                    color={theme.colors.icon}
+                />
 
                 <Dropdown
                     title='Departamento'

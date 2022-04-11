@@ -1,9 +1,10 @@
 import { StyleSheet } from 'react-native'
+import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        backgroundColor: '#000',
+        backgroundColor: '#F8D73A',
         borderRadius: 5,
         justifyContent: 'center',
         marginBottom: 10,
@@ -11,7 +12,7 @@ export const styles = StyleSheet.create({
         width: '70%',
     },
     text: {
-        color: '#fff',
+        color: theme.colors.background,
         fontFamily: 'Roboto_500Medium',
         fontSize: 16,
         fontWeight: 'bold',

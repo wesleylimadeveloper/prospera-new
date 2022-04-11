@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { ScrollView, View } from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons'
-import { styles } from './styles'
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'
+import { theme } from '../../global/styles/theme'
+import { styles } from './styles'
 
 export default function ClientRegistration() {
     const [name, setName] = useState('')
@@ -24,7 +25,7 @@ export default function ClientRegistration() {
         <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
 
-                <Ionicons name='person-circle' size={120} />
+                <Ionicons style={styles.icon} name='person-circle' size={120} color={theme.colors.icon} />
 
                 <Input
                     onChangeText={setName}

@@ -6,6 +6,7 @@ import * as Animatable from 'react-native-animatable'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import { styles } from './styles'
+import { theme } from '../../global/styles/theme'
 
 export default function VehicleRegistration() {
     const [licensePlate, setLicensePlate] = useState('')
@@ -27,6 +28,7 @@ export default function VehicleRegistration() {
                 <Ionicons
                     animation='zoomIn'
                     name='car-sport-sharp' size={120}
+                    color={theme.colors.icon}
                 />
             </Animatable.View>
 

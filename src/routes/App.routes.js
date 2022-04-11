@@ -6,6 +6,7 @@ import ClientRegistration from '../screens/ClientRegistration'
 import VehicleRegistration from '../screens/VehicleRegistration'
 import ServiceRegistration from '../screens/ServiceRegistration'
 import ProductiveRegistration from '../screens/ProductiveRegistration'
+import { theme } from '../global/styles/theme'
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
@@ -14,9 +15,9 @@ export default function AppRoutes() {
         <Navigator initialRouteName='Home'
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#000',
+                    backgroundColor: theme.colors.header,
                 },
-                headerTintColor: '#fff',
+                headerTintColor: theme.colors.background,
                 headerTitleStyle: {
                     fontFamily: 'Roboto_500Medium',
                     fontSize: 22

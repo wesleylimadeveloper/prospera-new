@@ -11,6 +11,7 @@ export default function Input({ keyboardType, onChangeText, placeholder, value }
                 keyboardType={keyboardType}
                 onChangeText={onChangeText}
                 placeholder={placeholder}
+                placeholderTextColor='#FFF'
                 value={value}
             />
         </View>

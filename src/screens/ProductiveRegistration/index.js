@@ -5,6 +5,7 @@ import Ionicons from '@expo/vector-icons/Ionicons'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import { styles } from './styles'
+import { theme } from '../../global/styles/theme'
 
 export default function ProductiveRegistration() {
     const [name, setName] = useState('')
@@ -15,7 +16,11 @@ export default function ProductiveRegistration() {
 
     return (
         <View style={styles.container}>
-            <Ionicons name='people' size={100} />
+            <Ionicons 
+                name='people' 
+                size={100}
+                color={theme.colors.icon}
+            />
 
             <Input
                 onChangeText={setName}
