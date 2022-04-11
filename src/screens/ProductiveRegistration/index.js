@@ -15,9 +15,7 @@ export default function ProductiveRegistration() {
 
     return (
         <View style={styles.container}>
-            <View style={styles.iconWrapper}>
-                <Ionicons name='people' size={100} />
-            </View>
+            <Ionicons name='people' size={100} />
 
             <Input
                 onChangeText={setName}

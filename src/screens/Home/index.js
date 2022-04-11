@@ -27,6 +27,11 @@ export default function Home() {
             />
 
             <Button
+                title="Cadastrar serviço"
+                onPress={() => navigation.navigate('ServiceRegistration')}
+            />
+
+            <Button
                 title="Cadastrar produtivo"
                 onPress={() => navigation.navigate('ProductiveRegistration')}
             />

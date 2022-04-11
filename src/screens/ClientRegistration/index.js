@@ -21,96 +21,92 @@ export default function ClientRegistration() {
     const [email, setEmail] = useState('')
 
     return (
-        <ScrollView>
-            <View 
-                style={styles.container}
-                showsVerticalScrollIndicator={false}>
-                
-                <View style={styles.iconWrapper}>
-                    <Ionicons name='person-circle' size={120} />
-                </View>
-                
+        <ScrollView showsVerticalScrollIndicator={false}>
+            <View style={styles.container}>
+
+                <Ionicons name='person-circle' size={120} />
+
                 <Input
                     onChangeText={setName}
                     placeholder="Nome"
                     value={name}
                 />
-                
+
                 <Input
                     keyboardType="phone-pad"
                     onChangeText={setPhone}
                     placeholder="Telefone"
                     value={phone}
                 />
-                
+
                 <Input
                     keyboardType="number-pad"
                     onChangeText={setCpf}
                     placeholder="CPF"
                     value={cpf}
                 />
-                
+
                 <Input
                     keyboardType="number-pad"
                     onChangeText={setRg}
                     placeholder="RG"
                     value={rg}
                 />
-                
+
                 <Input
                     keyboardType="number-pad"
                     onChangeText={setCep}
                     placeholder="CEP"
                     value={cep}
                 />
-                
+
                 <Input
                     onChangeText={setPublicArea}
                     placeholder="Logradouro"
                     value={publicArea}
                 />
-                
+
                 <Input
                     keyboardType="number-pad"
                     onChangeText={setNumber}
                     placeholder="Número"
                     value={number}
                 />
-                
+
                 <Input
                     onChangeText={setDistrict}
                     placeholder="Bairro"
                     value={district}
                 />
-                
+
                 <Input
                     onChangeText={setCity}
                     placeholder="Cidade"
                     value={city}
                 />
-                
+
                 <Input
                     onChangeText={setState}
                     placeholder="Estado"
                     value={state}
                 />
-                
+
                 <Input
                     keyboardType="phone-pad"
                     onChangeText={setBirth}
                     placeholder="Data de Nascimento"
                     value={birth}
                 />
-                
+
                 <Input
                     keyboardType="email-address"
                     onChangeText={setEmail}
                     placeholder="E-mail"
                     value={email}
                 />
-                
+
                 <Button title="Cadastrar" />
-                
+
             </View>
         </ScrollView>
     )

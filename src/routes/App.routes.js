@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from '../screens/Home'
 import ClientRegistration from '../screens/ClientRegistration'
 import VehicleRegistration from '../screens/VehicleRegistration'
+import ServiceRegistration from '../screens/ServiceRegistration'
 import ProductiveRegistration from '../screens/ProductiveRegistration'
 
 const { Navigator, Screen } = createNativeStackNavigator()
@@ -21,31 +22,39 @@ export default function AppRoutes() {
                     fontSize: 22
                 }
             }}>
-            <Screen 
+            <Screen
                 name="Home"
                 component={Home}
                 options={{
                     headerShown: false
                 }}
             />
-            
-            <Screen 
+
+            <Screen
                 name="ClientRegistration"
                 component={ClientRegistration}
                 options={{
                     headerTitle: 'Cadastro de cliente'
                 }}
             />
-            
-            <Screen 
+
+            <Screen
                 name="VehicleRegistration"
                 component={VehicleRegistration}
                 options={{
                     headerTitle: 'Cadastro de veículo'
                 }}
             />
-            
-            <Screen 
+
+            <Screen
+                name="ServiceRegistration"
+                component={ServiceRegistration}
+                options={{
+                    headerTitle: 'Cadastro de servíço'
+                }}
+            />
+
+            <Screen
                 name="ProductiveRegistration"
                 component={ProductiveRegistration}
                 options={{
