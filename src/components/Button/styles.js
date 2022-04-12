@@ -5,11 +5,11 @@ export const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         backgroundColor: '#F8D73A',
-        borderRadius: 5,
+        borderRadius: 25,
         justifyContent: 'center',
         marginBottom: 10,
         padding: 10,
-        width: '70%',
+        width: '75%',
     },
     text: {
         color: theme.colors.background,

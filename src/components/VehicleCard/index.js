@@ -22,21 +22,13 @@ export default function VehicleCard({ vehicle }) {
 
     return (
         <View style={styles.container}>
-            <Ionicons
-                style={styles.iconCar}
-                animation='zoomIn'
-                name='car-sport-sharp'
-                size={120}
-                color={theme.colors.icon}
-            />
+            <Text style={styles.title}>{brand} {model} - {year} - {color}</Text>
 
-            <Text style={styles.title}>{brand} {model} {year} {color}</Text>
-
-            <Text style={styles.text}>{licensePlate}</Text>
+            <Text style={styles.text}>Placa {licensePlate}</Text>
 
             <Text style={styles.text}>{fuel}</Text>
 
-            <Text style={styles.text}>{chassis}</Text>
+            <Text style={styles.text}>Chassi {chassis}</Text>
 
             <Button
                 title='Editar'

@@ -22,8 +22,8 @@ export default function AppRoutes() {
                 headerTintColor: theme.colors.background,
                 headerTitleStyle: {
                     fontFamily: theme.fonts.title,
-                    fontSize: 22
-                }
+                    fontSize: 22,
+                },
             }}>
             <Screen
                 name="Home"

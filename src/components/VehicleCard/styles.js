@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         alignSelf: 'center',
-        backgroundColor: '#777777',
+        backgroundColor: '#555555',
         borderRadius: 10,
         margin: 15,
         padding: 15,
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     title: {
         color: theme.colors.text,
         fontFamily: theme.fonts.title,
-        fontSize: 22,
+        fontSize: 20,
         marginBottom: 5,
         textAlign: 'center',
     },
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
         color: theme.colors.text,
         fontFamily: theme.fonts.text,
         fontSize: 16,
-        marginBottom: 5,
+        marginBottom: 10,
         textAlign: 'center'
     }
 })
