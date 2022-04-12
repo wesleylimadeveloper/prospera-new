@@ -11,7 +11,7 @@ export default function Dropdown({ title, onValueChange, selectedValue, children
             <Text style={styles.title}>{title}</Text>
             <View style={styles.picker}>
                 <Picker
-                    style={styles.pickerItem} 
+                    style={styles.pickerItem}
                     dropdownIconColor={theme.colors.text}
                     mode='dropdown'
                     onValueChange={onValueChange}

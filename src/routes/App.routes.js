@@ -2,7 +2,9 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import Home from '../screens/Home'
+import Clients from '../screens/Clients'
 import ClientRegistration from '../screens/ClientRegistration'
+import Vehicles from '../screens/Vehicles'
 import VehicleRegistration from '../screens/VehicleRegistration'
 import ServiceRegistration from '../screens/ServiceRegistration'
 import ProductiveRegistration from '../screens/ProductiveRegistration'
@@ -19,7 +21,7 @@ export default function AppRoutes() {
                 },
                 headerTintColor: theme.colors.background,
                 headerTitleStyle: {
-                    fontFamily: 'Roboto_500Medium',
+                    fontFamily: theme.fonts.title,
                     fontSize: 22
                 }
             }}>
@@ -32,10 +34,26 @@ export default function AppRoutes() {
             />
 
             <Screen
+                name="Clients"
+                component={Clients}
+                options={{
+                    headerTitle: 'Clientes'
+                }}
+            />
+
+            <Screen
                 name="ClientRegistration"
                 component={ClientRegistration}
                 options={{
                     headerTitle: 'Cadastro de cliente'
+                }}
+            />
+
+            <Screen
+                name="Vehicles"
+                component={Vehicles}
+                options={{
+                    headerTitle: 'Veículos'
                 }}
             />
 

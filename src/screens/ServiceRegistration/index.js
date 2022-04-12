@@ -20,9 +20,9 @@ export default function ServiceRegistration() {
         <ScrollView showsHorizontalScrollIndicator={false}>
             <View style={styles.container}>
 
-                <Entypo 
-                    style={styles.icon} 
-                    name='tools' 
+                <Entypo
+                    style={styles.icon}
+                    name='tools'
                     size={90}
                     color={theme.colors.icon}
                 />

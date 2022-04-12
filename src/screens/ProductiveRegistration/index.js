@@ -16,8 +16,8 @@ export default function ProductiveRegistration() {
 
     return (
         <View style={styles.container}>
-            <Ionicons 
-                name='people' 
+            <Ionicons
+                name='people'
                 size={100}
                 color={theme.colors.icon}
             />

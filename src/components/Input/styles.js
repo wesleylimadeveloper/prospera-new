@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#777777',
         borderRadius: 5,
-        fontFamily: 'Roboto_500Medium',
+        fontFamily: theme.fonts.text,
         justifyContent: 'center',
         marginBottom: 20,
         padding: 5,

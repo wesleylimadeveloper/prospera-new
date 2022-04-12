@@ -5,4 +5,8 @@ export const theme = {
         icon: '#F8D73A',
         text: '#ECECEC',
     },
+    fonts: {
+        text: 'Roboto_400Regular',
+        title: 'Roboto_700Bold',
+    },
 }

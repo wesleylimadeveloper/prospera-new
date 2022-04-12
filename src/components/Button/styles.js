@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     },
     text: {
         color: theme.colors.background,
-        fontFamily: 'Roboto_500Medium',
+        fontFamily: theme.fonts.title,
         fontSize: 16,
         fontWeight: 'bold',
         textTransform: 'uppercase'

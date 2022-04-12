@@ -17,18 +17,13 @@ export default function Home() {
             />
 
             <Button
+                title="Clientes"
+                onPress={() => navigation.navigate('Clients')}
+            />
+
+            <Button
                 title="Cadastrar cliente"
                 onPress={() => navigation.navigate('ClientRegistration')}
-            />
-
-            <Button
-                title="Cadastrar veículo"
-                onPress={() => navigation.navigate('VehicleRegistration')}
-            />
-
-            <Button
-                title="Cadastrar serviço"
-                onPress={() => navigation.navigate('ServiceRegistration')}
             />
 
             <Button
