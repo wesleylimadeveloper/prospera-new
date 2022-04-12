@@ -6,10 +6,10 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: theme.colors.background,
         flex: 1,
+        justifyContent: 'center',
         paddingBottom: 30
     },
     icon: {
-        marginBottom: 10,
-        marginTop: 20,
+        marginBottom: 20,
     },
 })

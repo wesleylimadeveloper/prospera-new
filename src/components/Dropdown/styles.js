@@ -10,9 +10,12 @@ export const styles = StyleSheet.create({
     },
     picker: {
         backgroundColor: '#777777',
-        borderRadius: 5,
+        borderRadius: 25,
+        height: 38,
+        justifyContent: 'center',
         marginBottom: 15,
-        width: '70%',
+        paddingHorizontal: 10,
+        width: '75%',
     },
     pickerItem: {
         color: theme.colors.text,

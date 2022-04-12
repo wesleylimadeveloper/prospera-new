@@ -5,15 +5,15 @@ import { Picker } from '@react-native-picker/picker'
 import { styles } from './styles'
 import { theme } from '../../global/styles/theme'
 
-export default function Dropdown({ title, onValueChange, selectedValue, children }) {
+export default function Dropdown({ prompt, onValueChange, selectedValue, children }) {
     return (
         <>
-            <Text style={styles.title}>{title}</Text>
             <View style={styles.picker}>
                 <Picker
                     style={styles.pickerItem}
                     dropdownIconColor={theme.colors.text}
-                    mode='dropdown'
+                    prompt={prompt}
+                    mode='dialog'
                     onValueChange={onValueChange}
                     selectedValue={selectedValue}
                 >
