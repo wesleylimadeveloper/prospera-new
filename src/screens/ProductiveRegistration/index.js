@@ -17,45 +17,45 @@ export default function ProductiveRegistration() {
     return (
         <View style={styles.container}>
             <Ionicons
+                color={theme.colors.icon}
                 name='people'
                 size={100}
-                color={theme.colors.icon}
             />
 
             <Input
                 onChangeText={setName}
-                placeholder="Nome"
+                placeholder='Nome'
                 value={name}
             />
 
             <Input
                 onChangeText={setPosition}
-                placeholder="Cargo"
+                placeholder='Cargo'
                 value={position}
             />
 
             <Input
-                keyboardType="number-pad"
+                keyboardType='number-pad'
                 onChangeText={setCpf}
-                placeholder="CPF"
+                placeholder='CPF'
                 value={cpf}
             />
 
             <Input
-                keyboardType="number-pad"
+                keyboardType='number-pad'
                 onChangeText={setRg}
-                placeholder="RG"
+                placeholder='RG'
                 value={rg}
             />
 
             <Input
-                keyboardType="number-pad"
+                keyboardType='number-pad'
                 onChangeText={setAdmissionDate}
-                placeholder="Data de admissão"
+                placeholder='Data de admissão'
                 value={admissionDate}
             />
 
-            <Button title="Cadastrar" />
+            <Button title='Cadastrar' />
         </View>
     )
 }

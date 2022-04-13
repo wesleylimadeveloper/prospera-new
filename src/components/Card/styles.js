@@ -5,16 +5,19 @@ export const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         backgroundColor: '#777777',
-        borderRadius: 25,
-        fontFamily: theme.fonts.text,
+        borderRadius: 10,
         justifyContent: 'center',
-        marginBottom: 20,
-        padding: 5,
-        width: '75%',
+        marginBottom: 10,
+        paddingVertical: 30,
+        width: '48%',
     },
-    input: {
+    touchable: {
+        alignItems: 'center',
+    },
+    text: {
         color: theme.colors.text,
-        marginLeft: 30,
-        width: '100%',
-    }
+        fontFamily: theme.fonts.title,
+        fontSize: 18,
+        textAlign: 'center',
+    },
 })

@@ -3,16 +3,13 @@ import { TextInput, View } from 'react-native'
 
 import { styles } from './styles'
 
-export default function Input({ keyboardType, onChangeText, placeholder, value }) {
+export default function Input({ ...rest }) {
     return (
         <View style={styles.container}>
             <TextInput
                 style={styles.input}
-                keyboardType={keyboardType}
-                onChangeText={onChangeText}
-                placeholder={placeholder}
                 placeholderTextColor='#FFF'
-                value={value}
+                {...rest}
             />
         </View>
     )

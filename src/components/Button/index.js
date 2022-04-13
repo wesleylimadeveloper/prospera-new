@@ -3,12 +3,13 @@ import { Text, TouchableOpacity } from 'react-native'
 
 import { styles } from './styles'
 
-export default function Button({ onPress, title }) {
+export default function Button({ title, ...rest }) {
     return (
         <TouchableOpacity
             style={styles.container}
             activeOpacity={0.8}
-            onPress={onPress}>
+            {...rest}
+        >
             <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
     )

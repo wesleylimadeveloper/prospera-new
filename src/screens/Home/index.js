@@ -1,35 +1,58 @@
 import React from 'react'
-import { Image, View } from 'react-native'
+import { ScrollView, Image, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
-import Logo from '../../assets/logo.png'
-import Button from '../../components/Button'
+import Simbol from '../../assets/simbol.png'
+import Card from '../../components/Card'
 import { styles } from './styles'
 
 export default function Home() {
     const navigation = useNavigation()
 
     return (
-        <View style={styles.container}>
-            <Image
-                style={styles.logo}
-                source={Logo}
-            />
+        <ScrollView showsVerticalScrollIndicator={false}>
+            <View style={styles.container}>
+                <Image style={styles.logo} source={Simbol} />
 
-            <Button
-                title="Clientes"
-                onPress={() => navigation.navigate('Clients')}
-            />
+                <View style={styles.cardsContainer}>
+                    <Card 
+                        iconName='car-sport-sharp'
+                        onPress={() => navigation.navigate("Vehicles")} 
+                        title='Pátio' 
+                    />
 
-            <Button
-                title="Cadastrar cliente"
-                onPress={() => navigation.navigate('ClientRegistration')}
-            />
+                    <Card
+                        iconName='md-person-circle-sharp'
+                        onPress={() => navigation.navigate("Clients")}
+                        title='Clientes'
+                    />
 
-            <Button
-                title="Cadastrar produtivo"
-                onPress={() => navigation.navigate('ProductiveRegistration')}
-            />
-        </View>
+                    <Card
+                        iconName='car-sport-sharp'
+                        title='Serviços'
+                    />
+
+                    <Card
+                        iconName='newspaper'
+                        title='Relatórios'
+                    />
+
+                    <Card
+                        iconName='md-calculator'
+                        title='Orçamentos'
+                    />
+
+                    <Card
+                        iconName='people'
+                        title='Usuários'
+                    />
+
+                    <Card
+                        iconName='settings-sharp'
+                        title='Configurações'
+                    />
+                </View>
+            </View>
+        </ScrollView>
     )
 }

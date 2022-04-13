@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View } from 'react-native'
+import { ScrollView, View } from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import * as Animatable from 'react-native-animatable'
 
@@ -19,70 +19,73 @@ export default function VehicleRegistration() {
     const [chassis, setChassis] = useState('')
 
     return (
-        <View style={styles.container}>
-            <Animatable.View
-                animation='bounceInLeft'
-                delay={100}
-                duration={1000}
-                style={styles.iconWrapper}>
-                <Ionicons
-                    animation='zoomIn'
-                    name='car-sport-sharp' size={120}
-                    color={theme.colors.icon}
+        <ScrollView contentContainerStyle={styles.scrollView}>
+            <View style={styles.container}>
+                <Animatable.View
+                    animation='bounceInLeft'
+                    delay={100}
+                    duration={1000}
+                    style={styles.iconWrapper}>
+                    <Ionicons
+                        animation='zoomIn'
+                        name='car-sport-sharp'
+                        size={120}
+                        color={theme.colors.icon}
+                    />
+                </Animatable.View>
+
+                <Input
+                    keyboardType='number-pad'
+                    onChangeText={setLicensePlate}
+                    placeholder='Placa'
+                    value={licensePlate}
                 />
-            </Animatable.View>
 
-            <Input
-                keyboardType="number-pad"
-                onChangeText={setLicensePlate}
-                placeholder="Placa"
-                value={licensePlate}
-            />
+                <Input
+                    onChangeText={setBrand}
+                    placeholder='Marca'
+                    value={brand}
+                />
 
-            <Input
-                onChangeText={setBrand}
-                placeholder="Marca"
-                value={brand}
-            />
+                <Input
+                    onChangeText={setModel}
+                    placeholder='Modelo'
+                    value={model}
+                />
 
-            <Input
-                onChangeText={setModel}
-                placeholder="Modelo"
-                value={model}
-            />
+                <Input
+                    keyboardType='number-pad'
+                    onChangeText={setYear}
+                    placeholder='Ano'
+                    value={year}
+                />
 
-            <Input
-                keyboardType="number-pad"
-                onChangeText={setYear}
-                placeholder="Ano"
-                value={year}
-            />
+                <Input
+                    onChangeText={setYearModel}
+                    placeholder='Ano/ Modelo'
+                    value={yearModel}
+                />
 
-            <Input
-                onChangeText={setYearModel}
-                placeholder="Ano/ Modelo"
-                value={yearModel}
-            />
+                <Input
+                    onChangeText={setFuel}
+                    placeholder='Combustível'
+                    value={fuel}
+                />
 
-            <Input
-                onChangeText={setFuel}
-                placeholder="Combustível"
-                value={fuel}
-            />
+                <Input
+                    onChangeText={setColor}
+                    placeholder='Cor'
+                    value={color}
+                />
 
-            <Input
-                onChangeText={setColor}
-                placeholder="Cor"
-                value={color}
-            />
+                <Input
+                    onChangeText={setChassis}
+                    placeholder='Chassi'
+                    value={chassis}
+                />
 
-            <Input
-                onChangeText={setChassis}
-                placeholder="Chassi"
-                value={chassis}
-            />
-
-            <Button title="Cadastrar" />
-        </View>
+                <Button title='Cadastrar' />
+            </View>
+        </ScrollView>
     )
 }

@@ -23,52 +23,54 @@ export default function ClientRegistration() {
 
     return (
         <View style={styles.container}>
-
-            <Ionicons style={styles.icon} name='person-circle' size={120} color={theme.colors.icon} />
+            <Ionicons style={styles.icon}
+                color={theme.colors.icon}
+                name='person-circle'
+                size={120}
+            />
 
             <Input
                 onChangeText={setName}
-                placeholder="Nome"
+                placeholder='Nome'
                 value={name}
             />
 
             <Input
-                keyboardType="phone-pad"
+                keyboardType='phone-pad'
                 onChangeText={setPhone}
-                placeholder="Telefone"
+                placeholder='Telefone'
                 value={phone}
             />
 
             <Input
-                keyboardType="number-pad"
+                keyboardType='number-pad'
                 onChangeText={setCpf}
-                placeholder="CPF"
+                placeholder='CPF'
                 value={cpf}
             />
 
             <Input
-                keyboardType="number-pad"
+                keyboardType='number-pad'
                 onChangeText={setRg}
-                placeholder="RG"
+                placeholder='RG'
                 value={rg}
             />
 
             <Input
-                keyboardType="phone-pad"
+                keyboardType='phone-pad'
                 onChangeText={setBirth}
-                placeholder="Data de Nascimento"
+                placeholder='Data de Nascimento'
                 value={birth}
             />
 
             <Input
-                keyboardType="email-address"
+                keyboardType='email-address'
                 onChangeText={setEmail}
-                placeholder="E-mail"
+                placeholder='E-mail'
                 value={email}
             />
 
-            <Button title="Cadastrar" />
-
+            <Button title='Cadastrar' />
         </View>
     )
 }

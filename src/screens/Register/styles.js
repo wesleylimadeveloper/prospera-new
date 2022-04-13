@@ -6,6 +6,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: theme.colors.background,
         flex: 1,
+        justifyContent: 'center',
+        paddingVertical: 15,
     },
     logo: {
         justifyContent: 'flex-start',

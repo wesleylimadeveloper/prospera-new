@@ -1,83 +1,66 @@
 import React from 'react'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import Entypo from '@expo/vector-icons/Entypo'
+import { Ionicons } from '@expo/vector-icons'
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 
-import Home from '../screens/Home'
-import Clients from '../screens/Clients'
-import ClientRegistration from '../screens/ClientRegistration'
+import HomeRoutes from './Home.routes'
 import Vehicles from '../screens/Vehicles'
-import VehicleRegistration from '../screens/VehicleRegistration'
-import ServiceRegistration from '../screens/ServiceRegistration'
-import ProductiveRegistration from '../screens/ProductiveRegistration'
+import RegisterRoutes from './Register.routes'
+import Profile from '../screens/Profile'
 import { theme } from '../global/styles/theme'
 
-const { Navigator, Screen } = createNativeStackNavigator()
+const { Navigator, Screen } = createBottomTabNavigator()
 
 export default function AppRoutes() {
     return (
-        <Navigator initialRouteName='Home'
+        <Navigator
             screenOptions={{
-                headerStyle: {
-                    backgroundColor: theme.colors.header,
-                },
-                headerTintColor: theme.colors.background,
-                headerTitleStyle: {
+                headerShown: false,
+                tabBarLabelStyle: {
                     fontFamily: theme.fonts.title,
-                    fontSize: 22,
+                    fontSize: 16
                 },
-            }}>
+                tabBarActiveTintColor: theme.colors.background,
+                tabBarStyle: {
+                    backgroundColor: theme.colors.header,
+                    borderTopColor: theme.colors.background,
+                },
+            }}
+        >
             <Screen
-                name="Home"
-                component={Home}
+                name='HomeRoutes'
+                component={HomeRoutes}
                 options={{
-                    headerShown: false
+                    title: 'Inicio',
+                    tabBarIcon: ({ color }) => <Entypo name='home' size={24} color={color} />,
                 }}
             />
 
             <Screen
-                name="Clients"
-                component={Clients}
-                options={{
-                    headerTitle: 'Clientes'
-                }}
-            />
-
-            <Screen
-                name="ClientRegistration"
-                component={ClientRegistration}
-                options={{
-                    headerTitle: 'Cadastro de cliente'
-                }}
-            />
-
-            <Screen
-                name="Vehicles"
+                name='Vehicles'
                 component={Vehicles}
                 options={{
-                    headerTitle: 'Veículos'
+                    title: 'Pátio',
+                    tabBarIcon: ({ color }) => <Ionicons name='car-sport-sharp' size={30} color={color} />,
                 }}
             />
 
             <Screen
-                name="VehicleRegistration"
-                component={VehicleRegistration}
+                name='RegisterRoutes'
+                component={RegisterRoutes}
                 options={{
-                    headerTitle: 'Cadastro de veículo'
+                    title: 'Cadastro',
+                    tabBarIcon: ({ color }) => <MaterialCommunityIcons name='database-plus' size={28} color={color} />,
                 }}
             />
 
             <Screen
-                name="ServiceRegistration"
-                component={ServiceRegistration}
+                name='Profile'
+                component={Profile}
                 options={{
-                    headerTitle: 'Cadastro de servíço'
-                }}
-            />
-
-            <Screen
-                name="ProductiveRegistration"
-                component={ProductiveRegistration}
-                options={{
-                    headerTitle: 'Cadastro de produtivo'
+                    title: 'Perfil',
+                    tabBarIcon: ({ color }) => <Ionicons name='md-person' size={28} color={color} />,
                 }}
             />
         </Navigator>

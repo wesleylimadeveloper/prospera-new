@@ -7,9 +7,8 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         backgroundColor: '#555555',
         borderRadius: 10,
-        margin: 15,
-        padding: 15,
-        width: '80%'
+        margin: 5,
+        width: '90%'
     },
     title: {
         color: theme.colors.text,
@@ -22,7 +21,7 @@ export const styles = StyleSheet.create({
         color: theme.colors.text,
         fontFamily: theme.fonts.text,
         fontSize: 16,
-        marginBottom: 10,
+        marginBottom: 5,
         textAlign: 'center'
     }
 })
