@@ -15,10 +15,10 @@ export default function Home() {
                 <Image style={styles.logo} source={Simbol} />
 
                 <View style={styles.cardsContainer}>
-                    <Card 
+                    <Card
                         iconName='car-sport-sharp'
-                        onPress={() => navigation.navigate("Vehicles")} 
-                        title='Pátio' 
+                        onPress={() => navigation.navigate("Vehicles")}
+                        title='Pátio'
                     />
 
                     <Card
@@ -28,7 +28,8 @@ export default function Home() {
                     />
 
                     <Card
-                        iconName='car-sport-sharp'
+                        iconName='car-crash'
+                        onPress={() => navigation.navigate("Services")}
                         title='Serviços'
                     />
 

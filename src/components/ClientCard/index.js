@@ -20,11 +20,11 @@ export default function ClientCard({ client }) {
 
             <View style={styles.buttonsWrapper}>
                 <ButtonCard
-                    onPress={() => navigation.navigate("Vehicles")} 
+                    onPress={() => navigation.navigate("Vehicles")}
                     title='Veículos'
                 />
 
-                <ButtonCard 
+                <ButtonCard
                     onPress={() => navigation.navigate("VehicleRegistration")}
                     title='Cadastrar veículo'
                 />

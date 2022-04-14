@@ -24,5 +24,12 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 5,
         textAlign: 'center'
-    }
+    },
+    buttonsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 5,
+        marginTop: 5,
+        width: '90%',
+    },
 })

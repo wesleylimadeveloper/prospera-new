@@ -22,13 +22,13 @@ export const styles = StyleSheet.create({
         color: theme.colors.text,
         fontFamily: theme.fonts.text,
         fontSize: 16,
-        marginBottom: 5,
+        marginBottom: 10,
         textAlign: 'center'
     },
     buttonsContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 10,
+        marginBottom: 5,
         width: '90%',
     },
 })

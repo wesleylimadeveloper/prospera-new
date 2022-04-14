@@ -18,7 +18,7 @@ export default function Register() {
                 />
 
                 <Card
-                    iconName='car-sport-sharp'
+                    iconName='car-crash'
                     onPress={() => navigation.navigate("ServiceRegistration")}
                     title='Cadastrar serviço'
                 />

@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import { TextInput, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
-import { theme } from '../../global/styles/theme'
+
 import { styles } from './styles'
+import { theme } from '../../global/styles/theme'
 
 export default function SearchBar() {
-    const [searchText, setSearchText ] = useState('')
+    const [searchText, setSearchText] = useState('')
 
     return (
         <View style={styles.container}>
-            <Ionicons 
+            <Ionicons
                 color={theme.colors.text}
-                name='search' 
-                size={20} 
+                name='search'
+                size={20}
             />
             <TextInput
                 style={styles.input}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
+import { FontAwesome5 } from '@expo/vector-icons'
 
 import { styles } from './styles'
 import { theme } from '../../global/styles/theme'
@@ -13,11 +14,20 @@ export default function Card({ iconName, title, ...rest }) {
                 activeOpacity={0.7}
                 {...rest}
             >
-                <Ionicons
-                    color={theme.colors.icon}
-                    name={iconName}
-                    size={100}
-                />
+                {iconName === 'car-crash'
+                    ?
+                    <FontAwesome5
+                        color={theme.colors.icon}
+                        name={iconName}
+                        size={100}
+                    />
+                    :
+                    <Ionicons
+                        color={theme.colors.icon}
+                        name={iconName}
+                        size={100}
+                    />
+                }
 
                 <Text style={styles.text}>{title}</Text>
             </TouchableOpacity>

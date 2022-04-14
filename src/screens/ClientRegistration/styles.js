@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: theme.colors.background,
         flex: 1,
-        paddingBottom: 10,
+        paddingBottom: 5,
     },
     icon: {
         marginBottom: 15,

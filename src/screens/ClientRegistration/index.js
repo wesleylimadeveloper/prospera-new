@@ -5,8 +5,8 @@ import { useNavigation } from '@react-navigation/native'
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'
-import { theme } from '../../global/styles/theme'
 import { styles } from './styles'
+import { theme } from '../../global/styles/theme'
 
 export default function ClientRegistration() {
     const navigation = useNavigation()
@@ -75,10 +75,10 @@ export default function ClientRegistration() {
                 />
 
                 <Button
-                    onPress={() => navigation.navigate("VehicleRegistration")} 
+                    onPress={() => navigation.navigate("VehicleRegistration")}
                     title='Incluir veículo'
                 />
-                
+
                 <Button title='Cadastrar' />
             </View>
         </ScrollView>

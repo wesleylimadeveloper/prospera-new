@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
-        marginBottom: 10,
+        marginBottom: 5,
         width: '90%'
     }
 })

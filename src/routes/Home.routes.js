@@ -2,12 +2,10 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import Home from '../screens/Home'
-import Clients from '../screens/Clients'
-import ClientRegistration from '../screens/ClientRegistration'
 import Vehicles from '../screens/Vehicles'
+import Clients from '../screens/Clients'
 import VehicleRegistration from '../screens/VehicleRegistration'
-import ServiceRegistration from '../screens/ServiceRegistration'
-import ProductiveRegistration from '../screens/ProductiveRegistration'
+import Services from '../screens/Services'
 import { theme } from '../global/styles/theme'
 
 const { Navigator, Screen } = createNativeStackNavigator()
@@ -35,26 +33,18 @@ export default function HomeRoutes() {
             />
 
             <Screen
-                name='Clients'
-                component={Clients}
-                options={{
-                    headerTitle: 'Clientes'
-                }}
-            />
-
-            <Screen
-                name='ClientRegistration'
-                component={ClientRegistration}
-                options={{
-                    headerTitle: 'Cadastro de cliente'
-                }}
-            />
-
-            <Screen
                 name='Vehicles'
                 component={Vehicles}
                 options={{
                     headerTitle: 'Pátio'
+                }}
+            />
+
+            <Screen
+                name='Clients'
+                component={Clients}
+                options={{
+                    headerTitle: 'Clientes'
                 }}
             />
 
@@ -67,20 +57,13 @@ export default function HomeRoutes() {
             />
 
             <Screen
-                name='ServiceRegistration'
-                component={ServiceRegistration}
+                name='Services'
+                component={Services}
                 options={{
-                    headerTitle: 'Cadastro de servíço'
+                    headerTitle: 'Serviços'
                 }}
             />
 
-            <Screen
-                name='ProductiveRegistration'
-                component={ProductiveRegistration}
-                options={{
-                    headerTitle: 'Cadastro de produtivo'
-                }}
-            />
         </Navigator>
     )
 }

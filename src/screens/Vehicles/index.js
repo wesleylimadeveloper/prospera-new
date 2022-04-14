@@ -45,7 +45,7 @@ export default function Vehicles() {
     return (
         <View style={styles.container}>
             <SearchBar />
-            
+
             <FlatList
                 data={vehicles}
                 keyExtractor={item => item.id}
