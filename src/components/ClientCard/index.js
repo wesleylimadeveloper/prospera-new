@@ -1,5 +1,5 @@
 import React from 'react-native'
-import { Text, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import ButtonCard from '../ButtonCard'
@@ -12,9 +12,11 @@ export default function ClientCard({ client }) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>{name}</Text>
+            <TouchableOpacity activeOpacity={0.8}>
+                <Text style={styles.title}>{name}</Text>
 
-            <Text style={styles.text}>CPF: {cpf}</Text>
+                <Text style={styles.text}>CPF: {cpf}</Text>
+            </TouchableOpacity>
 
             <View style={styles.buttonsWrapper}>
                 <ButtonCard
@@ -26,6 +28,10 @@ export default function ClientCard({ client }) {
                     onPress={() => navigation.navigate("VehicleRegistration")}
                     title='Cadastrar veículo'
                 />
+
+                <ButtonCard title='Editar' />
+
+                <ButtonCard title='Excluir' />
             </View>
         </View>
     )

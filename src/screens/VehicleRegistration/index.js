@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ScrollView, View } from 'react-native'
+import { KeyboardAvoidingView, ScrollView, View } from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import * as Animatable from 'react-native-animatable'
 
@@ -19,7 +19,7 @@ export default function VehicleRegistration() {
     const [chassis, setChassis] = useState('')
 
     return (
-        <ScrollView>
+        <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
                 <Animatable.View
                     animation='bounceInLeft'

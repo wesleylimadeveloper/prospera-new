@@ -7,14 +7,16 @@ export const styles = StyleSheet.create({
         backgroundColor: '#F8D73A',
         borderRadius: 3,
         justifyContent: 'center',
-        padding: 8,
+        marginBottom: 10,
+        paddingVertical: 8,
         width: '48%',
     },
     text: {
         color: theme.colors.background,
         fontFamily: theme.fonts.title,
-        fontSize: 14,
+        fontSize: 13,
         fontWeight: 'bold',
+        textAlign: 'center',
         textTransform: 'uppercase'
     },
 })

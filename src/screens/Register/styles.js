@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     cardsContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
         width: '95%',
     },
 })

@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
     },
     buttonsWrapper: {
         flexDirection: 'row',
+        flexWrap: 'wrap',
         justifyContent: 'space-between',
         marginBottom: 10,
         width: '90%'

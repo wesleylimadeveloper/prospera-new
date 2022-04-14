@@ -25,7 +25,7 @@ export default function ClientRegistration() {
     const [email, setEmail] = useState('')
 
     return (
-        <ScrollView>
+        <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
                 <Ionicons style={styles.icon}
                     color={theme.colors.icon}
@@ -49,7 +49,7 @@ export default function ClientRegistration() {
                 <Input
                     keyboardType='number-pad'
                     onChangeText={setCpf}
-                    placeholder='CPF'
+                    placeholder='CPF ou CNPJ'
                     value={cpf}
                 />
 
