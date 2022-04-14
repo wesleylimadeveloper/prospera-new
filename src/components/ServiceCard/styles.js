@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         backgroundColor: '#555555',
         borderRadius: 5,
-        margin: 5,
+        marginBottom: 10,
         padding: 4,
         width: '90%'
     },
@@ -15,20 +15,14 @@ export const styles = StyleSheet.create({
         color: theme.colors.text,
         fontFamily: theme.fonts.title,
         fontSize: 18,
-        marginBottom: 10,
+        marginBottom: 5,
         textAlign: 'center',
     },
     text: {
         color: theme.colors.text,
         fontFamily: theme.fonts.text,
         fontSize: 16,
-        marginBottom: 10,
+        marginBottom: 5,
         textAlign: 'center'
-    },
-    buttonsWrapper: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginBottom: 10,
-        width: '90%'
     }
 })

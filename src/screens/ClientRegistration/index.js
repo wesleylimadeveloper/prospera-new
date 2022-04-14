@@ -74,12 +74,12 @@ export default function ClientRegistration() {
                     value={email}
                 />
 
-                <Button title='Cadastrar' />
-
                 <Button
                     onPress={() => navigation.navigate("VehicleRegistration")} 
                     title='Incluir veículo'
                 />
+                
+                <Button title='Cadastrar' />
             </View>
         </ScrollView>
     )
