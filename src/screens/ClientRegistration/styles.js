@@ -6,8 +6,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: theme.colors.background,
         flex: 1,
-        justifyContent: 'center',
-        paddingBottom: 30,
+        paddingBottom: 10,
     },
     icon: {
         marginBottom: 15,

@@ -46,11 +46,6 @@ export default function Home() {
                         iconName='people'
                         title='Usuários'
                     />
-
-                    <Card
-                        iconName='settings-sharp'
-                        title='Configurações'
-                    />
                 </View>
             </View>
         </ScrollView>

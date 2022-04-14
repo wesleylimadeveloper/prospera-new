@@ -19,7 +19,7 @@ export default function VehicleRegistration() {
     const [chassis, setChassis] = useState('')
 
     return (
-        <ScrollView contentContainerStyle={styles.scrollView}>
+        <ScrollView>
             <View style={styles.container}>
                 <Animatable.View
                     animation='bounceInLeft'

@@ -3,9 +3,6 @@ import { StyleSheet } from 'react-native'
 import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
-    scrollView: {
-        flex: Roboto_100Thin,
-    },
     container: {
         alignItems: 'center',
         backgroundColor: theme.colors.background,

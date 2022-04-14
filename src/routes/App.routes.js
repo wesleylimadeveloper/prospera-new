@@ -26,8 +26,8 @@ export default function AppRoutes() {
                     backgroundColor: theme.colors.header,
                     borderTopColor: theme.colors.background,
                 },
-            }}
-        >
+            }}>
+
             <Screen
                 name='HomeRoutes'
                 component={HomeRoutes}
@@ -50,7 +50,7 @@ export default function AppRoutes() {
                 name='RegisterRoutes'
                 component={RegisterRoutes}
                 options={{
-                    title: 'Cadastro',
+                    title: 'Cadastros',
                     tabBarIcon: ({ color }) => <MaterialCommunityIcons name='database-plus' size={28} color={color} />,
                 }}
             />

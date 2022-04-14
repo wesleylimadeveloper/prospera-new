@@ -6,14 +6,15 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         alignSelf: 'center',
         backgroundColor: '#555555',
-        borderRadius: 10,
+        borderRadius: 5,
         marginBottom: 10,
+        padding: 4,
         width: '90%'
     },
     title: {
         color: theme.colors.text,
         fontFamily: theme.fonts.title,
-        fontSize: 20,
+        fontSize: 18,
         marginBottom: 5,
         textAlign: 'center',
     },

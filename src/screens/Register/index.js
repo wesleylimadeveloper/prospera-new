@@ -12,15 +12,15 @@ export default function Register() {
         <View style={styles.container}>
             <View style={styles.cardsContainer}>
                 <Card
-                    iconName='car-sport-sharp'
-                    onPress={() => navigation.navigate("VehicleRegistration")}
-                    title='Cadastrar veículo'
-                />
-
-                <Card
                     iconName='md-person-circle-sharp'
                     onPress={() => navigation.navigate("ClientRegistration")}
                     title='Cadastrar cliente'
+                />
+
+                <Card
+                    iconName='car-sport-sharp'
+                    onPress={() => navigation.navigate("VehicleRegistration")}
+                    title='Cadastrar veículo'
                 />
 
                 <Card
