@@ -12,21 +12,32 @@ export default function Register() {
         <View style={styles.container}>
             <View style={styles.cardsContainer}>
                 <Card
-                    iconName='md-person-circle-sharp'
-                    onPress={() => navigation.navigate("ClientRegistration")}
-                    title='Cadastrar cliente'
-                />
-
-                <Card
-                    iconName='car-crash'
+                    iconName='construct'
                     onPress={() => navigation.navigate("ServiceRegistration")}
-                    title='Cadastrar serviço'
+                    title='Serviço'
+                />
+                
+                <Card
+                    iconName='md-walk-outline'
+                    onPress={() => navigation.navigate("ProductiveRegistration")}
+                    title='Produtivo'
                 />
 
                 <Card
                     iconName='people'
-                    onPress={() => navigation.navigate("ProductiveRegistration")}
-                    title='Cadastrar produtivo'
+                    onPress={() => navigation.navigate("DepartmentRegistration")}
+                    title='Departamento'
+                />
+
+                <Card
+                    iconName='build'
+                    title='Peças'
+                />
+
+                <Card
+                    iconName='ios-cart'
+                    onPress={() => navigation.navigate("ProviderRegistration")}
+                    title='Fornecedores'
                 />
             </View>
         </View>

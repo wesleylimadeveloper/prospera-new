@@ -4,7 +4,7 @@ import { theme } from '../../global/styles/theme'
 export const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         marginBottom: 40,
         width: '33%',
     },
@@ -12,12 +12,12 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     titleWrapper: {
-        width: '60%',
+        width: '80%',
     },
     title: {
         color: theme.colors.text,
         fontFamily: theme.fonts.title,
-        fontSize: 16,
+        fontSize: 14,
         textAlign: 'center',
     },
 })

@@ -2,7 +2,6 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import Entypo from '@expo/vector-icons/Entypo'
 import { Ionicons } from '@expo/vector-icons'
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 
 import HomeRoutes from './Home.routes'
 import Vehicles from '../screens/Vehicles'
@@ -22,6 +21,7 @@ export default function AppRoutes() {
                     fontSize: 16
                 },
                 tabBarActiveTintColor: theme.colors.background,
+                tabBarInactiveTintColor: '#777777',
                 tabBarStyle: {
                     backgroundColor: theme.colors.header,
                     borderTopColor: theme.colors.background,

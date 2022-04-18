@@ -21,7 +21,7 @@ export default function Home() {
                     <Card
                         iconName='md-person-circle-sharp'
                         onPress={() => navigation.navigate("Clients")}
-                        title='Clientes'
+                        title='Clientes e Veículos'
                     />
 
                     <Card
@@ -35,8 +35,7 @@ export default function Home() {
                     />
 
                     <Card
-                        iconName='car-sport-sharp'
-                        onPress={() => navigation.navigate("Vehicles")}
+                        iconName='car-sport-outline'
                         title='Pátio'
                     />
 

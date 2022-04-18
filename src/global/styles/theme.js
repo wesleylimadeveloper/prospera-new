@@ -4,7 +4,7 @@ export const theme = {
         button: '#93CE35',
         header: '#93CE35',
         icon: '#93CE35',
-        text: '#CACACA',
+        text: '#F7F6F4',
     },
     fonts: {
         text: 'Roboto_400Regular',

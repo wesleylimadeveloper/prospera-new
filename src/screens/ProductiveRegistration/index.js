@@ -18,8 +18,9 @@ export default function ProductiveRegistration() {
         <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
                 <Ionicons
+                    style={styles.icon}
                     color={theme.colors.icon}
-                    name='people'
+                    name='md-walk-outline'
                     size={100}
                 />
 
@@ -54,6 +55,11 @@ export default function ProductiveRegistration() {
                     onChangeText={setAdmissionDate}
                     placeholder='Data de admissão'
                     value={admissionDate}
+                />
+
+                <Input
+                    keyboardType='number-pad'
+                    placeholder='Horário'
                 />
 
                 <Button title='Cadastrar' />

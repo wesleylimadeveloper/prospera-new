@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ScrollView, View } from 'react-native'
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5'
+import Ionicons from '@expo/vector-icons/Ionicons'
 
 import Dropdown from '../../components/Dropdown'
 import DropdownItem from '../../components/DrodownItem'
@@ -19,10 +19,10 @@ export default function ServiceRegistration() {
     return (
         <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
-                <FontAwesome5
+                <Ionicons
                     style={styles.icon}
                     color={theme.colors.icon}
-                    name='car-crash'
+                    name='construct'
                     size={90}
                 />
 

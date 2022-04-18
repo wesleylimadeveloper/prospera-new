@@ -5,7 +5,7 @@ import Home from '../screens/Home'
 import Vehicles from '../screens/Vehicles'
 import Clients from '../screens/Clients'
 import VehicleRegistration from '../screens/VehicleRegistration'
-import Services from '../screens/Services'
+import RegisterRoutes from '../routes/Register.routes'
 import { theme } from '../global/styles/theme'
 
 const { Navigator, Screen } = createNativeStackNavigator()
@@ -20,7 +20,7 @@ export default function HomeRoutes() {
                 headerTintColor: theme.colors.background,
                 headerTitleStyle: {
                     fontFamily: theme.fonts.title,
-                    fontSize: 22,
+                    fontSize: 18,
                 },
             }}
         >
@@ -33,18 +33,18 @@ export default function HomeRoutes() {
             />
 
             <Screen
-                name='Vehicles'
-                component={Vehicles}
-                options={{
-                    headerTitle: 'Pátio'
-                }}
-            />
-
-            <Screen
                 name='Clients'
                 component={Clients}
                 options={{
                     headerTitle: 'Clientes'
+                }}
+            />
+
+            <Screen
+                name='Vehicles'
+                component={Vehicles}
+                options={{
+                    headerTitle: 'Veículos'
                 }}
             />
 
@@ -57,13 +57,12 @@ export default function HomeRoutes() {
             />
 
             <Screen
-                name='Services'
-                component={Services}
+                name='RegisterRoutes'
+                component={RegisterRoutes}
                 options={{
-                    headerTitle: 'Serviços'
+                    headerTitle: 'Cadastro de veículo'
                 }}
             />
-
         </Navigator>
     )
 }

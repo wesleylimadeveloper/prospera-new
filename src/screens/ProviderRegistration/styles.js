@@ -9,10 +9,9 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: theme.colors.background,
         flex: 1,
-        justifyContent: 'center',
-        paddingTop: 30,
+        paddingBottom: 5,
     },
     icon: {
-        marginBottom: 10,
+        marginTop: 30,
     }
 })

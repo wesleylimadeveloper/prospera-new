@@ -8,7 +8,7 @@ export default function Input({ ...rest }) {
         <View style={styles.container}>
             <TextInput
                 style={styles.input}
-                placeholderTextColor='#FFF'
+                placeholderTextColor='#E0DBCA'
                 {...rest}
             />
         </View>
