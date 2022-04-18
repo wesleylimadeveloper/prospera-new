@@ -10,17 +10,14 @@ export default function Home() {
     const navigation = useNavigation()
 
     return (
-        <ScrollView showsVerticalScrollIndicator={false}>
+        <ScrollView
+            style={styles.scrollView} 
+            showsVerticalScrollIndicator={false}
+        >
             <View style={styles.container}>
                 <Image style={styles.logo} source={Simbol} />
 
                 <View style={styles.cardsContainer}>
-                    <Card
-                        iconName='car-sport-sharp'
-                        onPress={() => navigation.navigate("Vehicles")}
-                        title='Pátio'
-                    />
-
                     <Card
                         iconName='md-person-circle-sharp'
                         onPress={() => navigation.navigate("Clients")}
@@ -28,24 +25,25 @@ export default function Home() {
                     />
 
                     <Card
-                        iconName='car-crash'
-                        onPress={() => navigation.navigate("Services")}
-                        title='Serviços'
-                    />
-
-                    <Card
-                        iconName='newspaper'
-                        title='Relatórios'
-                    />
-
-                    <Card
                         iconName='md-calculator'
-                        title='Orçamentos'
+                        title='Orçamento'
                     />
 
                     <Card
-                        iconName='people'
-                        title='Usuários'
+                        iconName='document-text'
+                        title='Ordem de serviço'
+                    />
+
+                    <Card
+                        iconName='car-sport-sharp'
+                        onPress={() => navigation.navigate("Vehicles")}
+                        title='Pátio'
+                    />
+
+                    <Card
+                        iconName='logo-buffer'
+                        onPress={() => navigation.navigate("Register")}
+                        title='Cadastros'
                     />
                 </View>
             </View>

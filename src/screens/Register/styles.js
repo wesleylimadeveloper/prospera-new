@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 15,
     },
     logo: {
+        alignItems: 'flex-start',
         justifyContent: 'flex-start',
         marginBottom: -50,
         marginTop: -50,
@@ -19,7 +20,7 @@ export const styles = StyleSheet.create({
     cardsContainer: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         width: '95%',
     },
 })

@@ -19,17 +19,19 @@ export default function Card({ iconName, title, ...rest }) {
                     <FontAwesome5
                         color={theme.colors.icon}
                         name={iconName}
-                        size={100}
+                        size={80}
                     />
                     :
                     <Ionicons
                         color={theme.colors.icon}
                         name={iconName}
-                        size={100}
+                        size={80}
                     />
                 }
 
-                <Text style={styles.text}>{title}</Text>
+                <View style={styles.titleWrapper}>
+                    <Text style={styles.title}>{title}</Text>
+                </View>
             </TouchableOpacity>
         </View>
     )

@@ -1,9 +1,10 @@
 export const theme = {
     colors: {
         background: '#2D2D2D',
-        header: '#F8D73A',
-        icon: '#F8D73A',
-        text: '#ECECEC',
+        button: '#93CE35',
+        header: '#93CE35',
+        icon: '#93CE35',
+        text: '#CACACA',
     },
     fonts: {
         text: 'Roboto_400Regular',

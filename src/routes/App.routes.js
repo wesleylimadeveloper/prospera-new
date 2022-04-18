@@ -51,7 +51,7 @@ export default function AppRoutes() {
                 component={RegisterRoutes}
                 options={{
                     title: 'Cadastros',
-                    tabBarIcon: ({ color }) => <MaterialCommunityIcons name='database-plus' size={28} color={color} />,
+                    tabBarIcon: ({ color }) => <Ionicons name='logo-buffer' size={28} color={color} />,
                 }}
             />
 

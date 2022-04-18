@@ -4,20 +4,20 @@ import { theme } from '../../global/styles/theme'
 export const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        backgroundColor: '#777777',
-        borderRadius: 5,
         justifyContent: 'center',
-        marginBottom: 10,
-        paddingVertical: 30,
-        width: '48%',
+        marginBottom: 40,
+        width: '33%',
     },
     touchable: {
         alignItems: 'center',
     },
-    text: {
+    titleWrapper: {
+        width: '60%',
+    },
+    title: {
         color: theme.colors.text,
         fontFamily: theme.fonts.title,
-        fontSize: 18,
+        fontSize: 16,
         textAlign: 'center',
     },
 })

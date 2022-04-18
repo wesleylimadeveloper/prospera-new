@@ -2,6 +2,9 @@ import { StyleSheet } from 'react-native'
 import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
+    scrollView: {
+        backgroundColor: theme.colors.background,
+    },
     container: {
         alignItems: 'center',
         backgroundColor: theme.colors.background,
@@ -15,9 +18,10 @@ export const styles = StyleSheet.create({
         width: '35%',
     },
     cardsContainer: {
+        alignItems: 'flex-start',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         width: '95%',
     },
 })
