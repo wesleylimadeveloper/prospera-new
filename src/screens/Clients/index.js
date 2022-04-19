@@ -40,7 +40,7 @@ export default function Clients() {
     return (
         <View style={styles.container}>
             <SearchBar />
-           
+
             <FlatList
                 data={clients}
                 keyExtractor={item => item.id}

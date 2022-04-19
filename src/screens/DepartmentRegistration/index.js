@@ -1,6 +1,6 @@
 import React from 'react'
 import { ScrollView, View } from 'react-native'
-import { Ionicons } from '@expo/vector-icons';  
+import { Ionicons } from '@expo/vector-icons';
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'
@@ -12,7 +12,7 @@ export default function DepartmentRegistration() {
         <ScrollView style={styles.scrollView}>
             <View style={styles.container}>
                 <Ionicons
-                    style={styles.icon} 
+                    style={styles.icon}
                     color={theme.colors.icon}
                     name='people'
                     size={100}

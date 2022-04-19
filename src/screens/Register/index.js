@@ -16,7 +16,7 @@ export default function Register() {
                     onPress={() => navigation.navigate("ServiceRegistration")}
                     title='Serviço'
                 />
-                
+
                 <Card
                     iconName='md-walk-outline'
                     onPress={() => navigation.navigate("ProductiveRegistration")}
@@ -31,6 +31,7 @@ export default function Register() {
 
                 <Card
                     iconName='build'
+                    onPress={() => navigation.navigate("ToolRegistration")}
                     title='Peça'
                 />
 

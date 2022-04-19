@@ -2,8 +2,10 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import Home from '../screens/Home'
-import Vehicles from '../screens/Vehicles'
+import ClientsVehicles from '../screens/ClientsVehicles'
 import Clients from '../screens/Clients'
+import ClientRegistration from '../screens/ClientRegistration'
+import Vehicles from '../screens/Vehicles'
 import VehicleRegistration from '../screens/VehicleRegistration'
 import Patio from '../screens/Patio'
 import Register from '../screens/Register'
@@ -34,10 +36,26 @@ export default function HomeRoutes() {
             />
 
             <Screen
+                name='ClientsVehicles'
+                component={ClientsVehicles}
+                options={{
+                    headerTitle: 'Clientes e veículos'
+                }}
+            />
+
+            <Screen
                 name='Clients'
                 component={Clients}
                 options={{
-                    headerTitle: 'Clientes e veículos'
+                    headerTitle: 'Clientes'
+                }}
+            />
+
+            <Screen
+                name='ClientRegistration'
+                component={ClientRegistration}
+                options={{
+                    headerTitle: 'Cadastro de cliente'
                 }}
             />
 

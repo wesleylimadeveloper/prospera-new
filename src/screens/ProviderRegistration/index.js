@@ -27,7 +27,7 @@ export default function ProviderRegistration() {
                 <Input
                     placeholder='Pessoa física/ jurídica'
                 />
-                
+
                 <Input
                     placeholder='CPF/ CNPJ'
                 />

@@ -11,7 +11,7 @@ export default function Home() {
 
     return (
         <ScrollView
-            style={styles.scrollView} 
+            style={styles.scrollView}
             showsVerticalScrollIndicator={false}
         >
             <View style={styles.container}>
@@ -20,7 +20,7 @@ export default function Home() {
                 <View style={styles.cardsContainer}>
                     <Card
                         iconName='md-person-circle-sharp'
-                        onPress={() => navigation.navigate("Clients")}
+                        onPress={() => navigation.navigate("ClientsVehicles")}
                         title='Clientes e Veículos'
                     />
 

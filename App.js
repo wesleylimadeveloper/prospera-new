@@ -20,9 +20,9 @@ export default function App() {
   }
 
   return (
-   <NavigationContainer>
-     <StatusBar barStyle='light-content' backgroundColor={theme.colors.background} />
-     <AppRoutes />
-   </NavigationContainer>
+    <NavigationContainer>
+      <StatusBar barStyle='light-content' backgroundColor={theme.colors.background} />
+      <AppRoutes />
+    </NavigationContainer>
   )
 }

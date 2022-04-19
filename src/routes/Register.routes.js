@@ -5,6 +5,7 @@ import Register from '../screens/Register'
 import ServiceRegistration from '../screens/ServiceRegistration'
 import ProductiveRegistration from '../screens/ProductiveRegistration'
 import DepartmentRegistration from '../screens/DepartmentRegistration'
+import ToolRegistration from '../screens/ToolRegistration'
 import ProviderRegistration from '../screens/ProviderRegistration'
 import { theme } from '../global/styles/theme'
 
@@ -23,7 +24,7 @@ export default function HomeRoutes() {
                     fontSize: 20,
                 },
             }}
-            >
+        >
             <Screen
                 name='Register'
                 component={Register}
@@ -47,12 +48,20 @@ export default function HomeRoutes() {
                     title: 'Cadastro de produtivo'
                 }}
             />
-            
+
             <Screen
                 name='DepartmentRegistration'
                 component={DepartmentRegistration}
                 options={{
                     title: 'Cadastro de departamento'
+                }}
+            />
+
+            <Screen
+                name='ToolRegistration'
+                component={ToolRegistration}
+                options={{
+                    title: 'Cadastro de peça'
                 }}
             />
 

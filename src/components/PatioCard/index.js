@@ -13,11 +13,11 @@ export default function PatioCard({ patioCar }) {
             </TouchableOpacity>
 
             <Text style={styles.text}>OS: {SO}</Text>
-            
+
             <Text style={styles.text}>Entrada: {getIn}</Text>
-            
+
             <Text style={styles.text}>Saída: {getOut}</Text>
-            
+
             <Text style={styles.text}>Hora: {hour}</Text>
         </View>
     )
