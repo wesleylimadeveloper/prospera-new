@@ -31,13 +31,13 @@ export default function Register() {
 
                 <Card
                     iconName='build'
-                    title='Peças'
+                    title='Peça'
                 />
 
                 <Card
                     iconName='ios-cart'
                     onPress={() => navigation.navigate("ProviderRegistration")}
-                    title='Fornecedores'
+                    title='Fornecedor'
                 />
             </View>
         </View>

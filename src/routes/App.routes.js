@@ -4,7 +4,7 @@ import Entypo from '@expo/vector-icons/Entypo'
 import { Ionicons } from '@expo/vector-icons'
 
 import HomeRoutes from './Home.routes'
-import Vehicles from '../screens/Vehicles'
+import Patio from '../screens/Patio'
 import RegisterRoutes from './Register.routes'
 import Profile from '../screens/Profile'
 import { theme } from '../global/styles/theme'
@@ -38,8 +38,8 @@ export default function AppRoutes() {
             />
 
             <Screen
-                name='Vehicles'
-                component={Vehicles}
+                name='Patio'
+                component={Patio}
                 options={{
                     title: 'Pátio',
                     tabBarIcon: ({ color }) => <Ionicons name='car-sport-sharp' size={30} color={color} />,

@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
         borderColor: '#FFF',
         borderRadius: 25,
         flexDirection: 'row',
-        marginBottom: 20,
         paddingHorizontal: 10,
         paddingVertical: 5,
         width: '90%',

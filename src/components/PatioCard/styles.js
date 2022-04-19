@@ -3,13 +3,12 @@ import { theme } from '../../global/styles/theme'
 
 export const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
         alignSelf: 'center',
         borderBottomWidth: 1,
         borderColor: theme.colors.icon,
-        marginVertical: 10,
+        marginVertical: 5,
         padding: 4,
-        width: '90%'
+        width: '90%',
     },
     title: {
         color: theme.colors.text,
@@ -24,11 +23,5 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 10,
         textAlign: 'center'
-    },
-    buttonsContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginBottom: 5,
-        width: '90%',
     },
 })

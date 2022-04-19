@@ -36,12 +36,13 @@ export default function Home() {
 
                     <Card
                         iconName='car-sport-outline'
+                        onPress={() => navigation.navigate("Patio")}
                         title='Pátio'
                     />
 
                     <Card
                         iconName='logo-buffer'
-                        onPress={() => navigation.navigate("Register")}
+                        onPress={() => navigation.navigate("RegisterRoutes")}
                         title='Cadastros'
                     />
                 </View>

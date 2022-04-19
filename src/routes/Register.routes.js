@@ -20,7 +20,7 @@ export default function HomeRoutes() {
                 headerTintColor: theme.colors.background,
                 headerTitleStyle: {
                     fontFamily: theme.fonts.title,
-                    fontSize: 18,
+                    fontSize: 20,
                 },
             }}
             >

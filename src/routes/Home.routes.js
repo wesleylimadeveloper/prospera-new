@@ -5,7 +5,8 @@ import Home from '../screens/Home'
 import Vehicles from '../screens/Vehicles'
 import Clients from '../screens/Clients'
 import VehicleRegistration from '../screens/VehicleRegistration'
-import RegisterRoutes from '../routes/Register.routes'
+import Patio from '../screens/Patio'
+import Register from '../screens/Register'
 import { theme } from '../global/styles/theme'
 
 const { Navigator, Screen } = createNativeStackNavigator()
@@ -20,7 +21,7 @@ export default function HomeRoutes() {
                 headerTintColor: theme.colors.background,
                 headerTitleStyle: {
                     fontFamily: theme.fonts.title,
-                    fontSize: 18,
+                    fontSize: 20,
                 },
             }}
         >
@@ -36,7 +37,7 @@ export default function HomeRoutes() {
                 name='Clients'
                 component={Clients}
                 options={{
-                    headerTitle: 'Clientes'
+                    headerTitle: 'Clientes e veículos'
                 }}
             />
 
@@ -57,10 +58,18 @@ export default function HomeRoutes() {
             />
 
             <Screen
-                name='RegisterRoutes'
-                component={RegisterRoutes}
+                name='Patio'
+                component={Patio}
                 options={{
-                    headerTitle: 'Cadastro de veículo'
+                    headerTitle: 'Pátio'
+                }}
+            />
+
+            <Screen
+                name='Register'
+                component={Register}
+                options={{
+                    headerTitle: 'Cadastros'
                 }}
             />
         </Navigator>
