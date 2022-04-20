@@ -1,12 +1,10 @@
 import React from 'react'
-import { FlatList, View } from 'react-native'
 
 import SearchBar from '../../components/SearchBar'
-import ButtonCard from '../../components/ButtonCard'
 import ClientCard from '../../components/ClientCard'
-import { styles } from './styles'
+import { Container, List } from './styles'
 
-export default function Clients() {
+export default () => {
     const clients = [
         {
             id: '1',
@@ -38,14 +36,14 @@ export default function Clients() {
     ]
 
     return (
-        <View style={styles.container}>
+        <Container>
             <SearchBar />
 
-            <FlatList
+            <List
                 data={clients}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => <ClientCard client={item} />}
             />
-        </View>
+        </Container>
     )
 }

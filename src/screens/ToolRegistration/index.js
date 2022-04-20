@@ -1,17 +1,14 @@
 import React from 'react-native'
-import { View } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import { theme } from '../../global/styles/theme'
-import { styles } from './styles'
+import { Container, Icon } from './styles'
 
-export default function ToolRegistration() {
+export default () => {
     return (
-        <View style={styles.container}>
-            <Ionicons
-                style={styles.icon}
+        <Container>
+            <Icon
                 color={theme.colors.icon}
                 name='build'
                 size={100}
@@ -20,6 +17,6 @@ export default function ToolRegistration() {
             <Input placeholder='Peça' />
 
             <Button title='Cadastrar' />
-        </View>
+        </Container>
     )
 }

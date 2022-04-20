@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { KeyboardAvoidingView, ScrollView, View } from 'react-native'
 import Ionicons from '@expo/vector-icons/Ionicons'
-import * as Animatable from 'react-native-animatable'
 
 import Input from '../../components/Input'
 import Button from '../../components/Button'
-import { styles } from './styles'
+import { Scroll, Container, Animate } from './styles'
 import { theme } from '../../global/styles/theme'
 
 export default function VehicleRegistration() {
@@ -19,20 +17,19 @@ export default function VehicleRegistration() {
     const [chassis, setChassis] = useState('')
 
     return (
-        <ScrollView style={styles.scrollView}>
-            <View style={styles.container}>
-                <Animatable.View
+        <Scroll>
+            <Container>
+                <Animate
                     animation='bounceInLeft'
                     delay={100}
-                    duration={1000}
-                    style={styles.iconWrapper}>
+                    duration={1000}>
                     <Ionicons
                         animation='zoomIn'
                         name='car-sport-sharp'
                         size={120}
                         color={theme.colors.icon}
                     />
-                </Animatable.View>
+                </Animate>
 
                 <Input
                     keyboardType='number-pad'
@@ -85,7 +82,7 @@ export default function VehicleRegistration() {
                 />
 
                 <Button title='Cadastrar' />
-            </View>
-        </ScrollView>
+            </Container>
+        </Scroll>
     )
 }

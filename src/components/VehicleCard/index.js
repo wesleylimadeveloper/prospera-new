@@ -1,27 +1,27 @@
 import React from 'react-native'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import ButtonCard from '../ButtonCard'
-import { styles } from './styles'
+import { Container, Title, Text, ButtonsWrapper } from './styles'
 
-export default function VehicleCard({ vehicle }) {
+export default ({ vehicle }) => {
     const navigation = useNavigation()
 
     const { licensePlate, brand, model, year, fuel, color, chassis } = vehicle
 
     return (
-        <View style={styles.container}>
+        <Container>
             <TouchableOpacity activeOpacity={0.9}>
-                <Text style={styles.title}>{brand} {model}</Text>
+                <Title>{brand} {model}</Title>
 
-                <Text style={styles.text}>Placa {licensePlate}</Text>
+                <Text>Placa {licensePlate}</Text>
             </TouchableOpacity>
 
-            <View style={styles.buttonsContainer}>
+            <ButtonsWrapper>
                 <ButtonCard title='Editar' />
                 <ButtonCard title='Excluir' />
-            </View>
-        </View>
+            </ButtonsWrapper>
+        </Container>
     )
 }

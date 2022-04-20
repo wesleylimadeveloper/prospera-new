@@ -1,23 +1,23 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        marginBottom: 40,
-        width: '33%',
-    },
-    touchable: {
-        alignItems: 'center',
-    },
-    titleWrapper: {
-        width: '80%',
-    },
-    title: {
-        color: theme.colors.text,
-        fontFamily: theme.fonts.title,
-        fontSize: 14,
-        textAlign: 'center',
-    },
-})
+export const Container = styled.View`
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 33%;
+`
+
+export const Touchable = styled.TouchableOpacity`
+    align-items: center;
+`
+
+export const TitleWrapper = styled.View`
+    width: 80%;
+`
+
+export const Title = styled.Text`
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.fonts.title};
+    font-size: 14px;
+    text-align: center;
+`

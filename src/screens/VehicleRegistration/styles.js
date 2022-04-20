@@ -1,20 +1,18 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components'
+import * as Animatable from 'react-native-animatable'
 
-export const styles = StyleSheet.create({
-    scrollView: {
-        backgroundColor: theme.colors.background,
-    },
-    container: {
-        alignItems: 'center',
-        backgroundColor: theme.colors.background,
-        flex: 1,
-        justifyContent: 'center',
-        paddingBottom: 15,
-        paddingTop: 40
-    },
-    iconWrapper: {
-        marginBottom: -10,
-        marginTop: -40,
-    }
-})
+export const Scroll = styled.ScrollView`
+    background-color: ${({ theme }) => theme.colors.background};
+`
+
+export const Container = styled.View`
+    align-items: center;
+    background-color: ${({ theme }) => theme.colors.background};
+    flex: 1;
+    justify-content: center;
+    padding: 40px 0 15px 0;
+`
+
+export const Animate = styled(Animatable.View)`
+    margin: -40px 0 -10px 0;
+`

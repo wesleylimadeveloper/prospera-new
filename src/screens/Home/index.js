@@ -1,23 +1,21 @@
 import React from 'react'
-import { ScrollView, Image, View } from 'react-native'
+import { Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import Simbol from '../../assets/simbol.png'
 import Card from '../../components/Card'
-import { styles } from './styles'
+import { Scroll, Container, CardsWrapper, styles } from './styles'
 
-export default function Home() {
+export default () => {
     const navigation = useNavigation()
 
     return (
-        <ScrollView
-            style={styles.scrollView}
-            showsVerticalScrollIndicator={false}
-        >
-            <View style={styles.container}>
+        <Scroll
+            showsVerticalScrollIndicator={false}>
+            <Container>
                 <Image style={styles.logo} source={Simbol} />
 
-                <View style={styles.cardsContainer}>
+                <CardsWrapper>
                     <Card
                         iconName='md-person-circle-sharp'
                         onPress={() => navigation.navigate("ClientsVehicles")}
@@ -45,8 +43,8 @@ export default function Home() {
                         onPress={() => navigation.navigate("RegisterRoutes")}
                         title='Cadastros'
                     />
-                </View>
-            </View>
-        </ScrollView>
+                </CardsWrapper>
+            </Container>
+        </Scroll>
     )
 }

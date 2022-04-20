@@ -1,11 +1,10 @@
 import React from 'react'
-import { FlatList, View } from 'react-native'
 
 import ServiceCard from '../../components/ServiceCard'
 import SearchBar from '../../components/SearchBar'
-import { styles } from './styles'
+import { Container, List } from './styles'
 
-export default function Services() {
+export default () => {
     const vehicles = [
         {
             id: '1',
@@ -31,14 +30,14 @@ export default function Services() {
     ]
 
     return (
-        <View style={styles.container}>
+        <Container style={styles.container}>
             <SearchBar />
 
-            <FlatList
+            <List
                 data={vehicles}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => <ServiceCard service={item} />}
             />
-        </View>
+        </Container>
     )
 }

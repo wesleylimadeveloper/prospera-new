@@ -1,18 +1,17 @@
 import React from 'react'
-import { View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { Ionicons } from '@expo/vector-icons';
 
 import Button from '../../components/Button'
-import { styles } from './styles'
+import { Container, IconsWrapper } from './styles'
 import { theme } from '../../global/styles/theme';
 
-export default function ClientsVehicle() {
+export default () => {
     const navigation = useNavigation()
 
     return (
-        <View style={styles.container}>
-            <View style={styles.iconsWrapper}>
+        <Container>
+            <IconsWrapper>
                 <Ionicons
                     color={theme.colors.icon}
                     name='md-person-circle-sharp'
@@ -23,7 +22,7 @@ export default function ClientsVehicle() {
                     name='car-sport-sharp'
                     size={100}
                 />
-            </View>
+            </IconsWrapper>
 
             <Button
                 onPress={() => navigation.navigate("Clients")}
@@ -39,6 +38,6 @@ export default function ClientsVehicle() {
                 onPress={() => navigation.navigate("Vehicles")}
                 title='Consultar veículo'
             />
-        </View>
+        </Container>
     )
 }

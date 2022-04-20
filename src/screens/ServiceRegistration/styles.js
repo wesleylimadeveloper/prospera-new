@@ -1,18 +1,17 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components/native'
+import Ionicons from '@expo/vector-icons/Ionicons'
 
-export const styles = StyleSheet.create({
-    scrollView: {
-        backgroundColor: theme.colors.background,
-    },
-    container: {
-        alignItems: 'center',
-        backgroundColor: theme.colors.background,
-        flex: 1,
-        paddingBottom: 10,
-        paddingTop: 30,
-    },
-    icon: {
-        marginBottom: 20,
-    },
-})
+export const Scroll = styled.ScrollView`
+    background-color: ${({ theme }) => theme.colors.background};
+`
+
+export const Container = styled.View`
+    align-items: center;
+    background-color: ${({ theme }) => theme.colors.background};
+    flex: 1;
+    padding: 30px 0 10px 0;
+`
+
+export const Icon = styled(Ionicons)`
+    margin-bottom: 20px;
+`

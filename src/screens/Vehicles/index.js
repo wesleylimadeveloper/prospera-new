@@ -1,11 +1,10 @@
 import React from 'react'
-import { FlatList, View } from 'react-native'
 
 import VehicleCard from '../../components/VehicleCard'
 import SearchBar from '../../components/SearchBar'
-import { styles } from './styles'
+import { Container, List } from './styles'
 
-export default function Vehicles() {
+export default () => {
     const vehicles = [
         {
             id: '1',
@@ -43,14 +42,14 @@ export default function Vehicles() {
     ]
 
     return (
-        <View style={styles.container}>
+        <Container>
             <SearchBar />
 
-            <FlatList
+            <List
                 data={vehicles}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => <VehicleCard vehicle={item} />}
             />
-        </View>
+        </Container>
     )
 }

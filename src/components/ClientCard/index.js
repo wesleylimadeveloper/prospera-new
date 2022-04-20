@@ -1,24 +1,23 @@
 import React from 'react-native'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import ButtonCard from '../ButtonCard'
-import { styles } from './styles'
+import { Container, Title, Text, ButtonsWrapper } from './styles'
 
-export default function ClientCard({ client }) {
+export default ({ client }) => {
     const navigation = useNavigation()
 
     const { name, birthDate, email, phone, rg, cpf } = client
 
     return (
-        <View style={styles.container}>
+        <Container>
             <TouchableOpacity activeOpacity={0.8}>
-                <Text style={styles.title}>{name}</Text>
-
-                <Text style={styles.text}>CPF: {cpf}</Text>
+                <Title>{name}</Title>
+                <Text>CPF: {cpf}</Text>
             </TouchableOpacity>
 
-            <View style={styles.buttonsWrapper}>
+            <ButtonsWrapper>
                 <ButtonCard
                     onPress={() => navigation.navigate("Vehicles")}
                     title='Veículos'
@@ -32,7 +31,7 @@ export default function ClientCard({ client }) {
                 <ButtonCard title='Editar' />
 
                 <ButtonCard title='Excluir' />
-            </View>
-        </View>
+            </ButtonsWrapper>
+        </Container>
     )
 }

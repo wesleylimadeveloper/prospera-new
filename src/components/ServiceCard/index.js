@@ -1,31 +1,31 @@
 import React from 'react-native'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import ButtonCard from '../ButtonCard'
-import { styles } from './styles'
+import { Container, Title, Text, ButtonsWrapper } from './styles'
 
-export default function ServiceCard({ service }) {
+export default ({ service }) => {
     const navigation = useNavigation()
 
     const { department, component, serviceType, vehicleSize } = service
 
     return (
-        <View style={styles.container}>
+        <Container>
             <TouchableOpacity activeOpacity={0.9}>
-                <Text style={styles.title}>{department}</Text>
+                <Title>{department}</Title>
 
-                <Text style={styles.text}>{component}</Text>
+                <Text>{component}</Text>
 
-                <Text style={styles.text}>{serviceType}</Text>
+                <Text>{serviceType}</Text>
 
-                <Text style={styles.text}>Veículo tamanho {vehicleSize}</Text>
+                <Text>Veículo tamanho {vehicleSize}</Text>
             </TouchableOpacity>
 
-            <View style={styles.buttonsContainer}>
+            <ButtonsWrapper>
                 <ButtonCard title='Editar' />
                 <ButtonCard title='Excluir' />
-            </View>
-        </View>
+            </ButtonsWrapper>
+        </Container>
     )
 }

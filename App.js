@@ -1,6 +1,7 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
+import { ThemeProvider } from 'styled-components/native'
 import { useFonts } from 'expo-font'
 import { Roboto_400Regular, Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto'
 import AppLoading from 'expo-app-loading'
@@ -21,8 +22,10 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <StatusBar barStyle='light-content' backgroundColor={theme.colors.background} />
-      <AppRoutes />
+      <ThemeProvider theme={theme}>
+        <StatusBar barStyle='light-content' backgroundColor={theme.colors.background} />
+        <AppRoutes />
+      </ThemeProvider>
     </NavigationContainer>
   )
 }

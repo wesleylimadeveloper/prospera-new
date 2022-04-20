@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
-import { ScrollView, View } from 'react-native'
-import Ionicons from '@expo/vector-icons/Ionicons'
 
 import Dropdown from '../../components/Dropdown'
 import DropdownItem from '../../components/DrodownItem'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
-import { styles } from './styles'
+import { Scroll, Container, Icon } from './styles'
 import { theme } from '../../global/styles/theme'
 
-export default function ServiceRegistration() {
+export default () => {
     const [department, setDepartment] = useState('Estética')
     const [component, setComponent] = useState('')
     const [serviceType, setServiceType] = useState('Decapagem')
@@ -17,10 +15,9 @@ export default function ServiceRegistration() {
     const [demandType, setDemandType] = useState('Quantidade de horas')
 
     return (
-        <ScrollView style={styles.scrollView}>
-            <View style={styles.container}>
-                <Ionicons
-                    style={styles.icon}
+        <Scroll>
+            <Container>
+                <Icon
                     color={theme.colors.icon}
                     name='construct'
                     size={90}
@@ -79,7 +76,7 @@ export default function ServiceRegistration() {
                 />
 
                 <Button title='Cadastrar' />
-            </View>
-        </ScrollView>
+            </Container>
+        </Scroll>
     )
 }

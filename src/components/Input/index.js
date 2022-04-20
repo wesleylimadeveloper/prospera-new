@@ -1,16 +1,14 @@
 import React from 'react'
-import { TextInput, View } from 'react-native'
 
-import { styles } from './styles'
+import { Container, Input } from './styles'
 
-export default function Input({ ...rest }) {
+export default ({ ...rest }) => {
     return (
-        <View style={styles.container}>
-            <TextInput
-                style={styles.input}
+        <Container>
+            <Input
                 placeholderTextColor='#E0DBCA'
                 {...rest}
             />
-        </View>
+        </Container>
     )
 }

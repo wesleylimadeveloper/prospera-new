@@ -1,10 +1,9 @@
 import React from 'react'
-import { FlatList, Text, View } from 'react-native'
 
 import PatioCard from '../../components/PatioCard'
-import { styles } from './styles'
+import { Container, List } from './styles'
 
-export default function Patio() {
+export default () => {
     const PatioCars = [
         {
             id: '1',
@@ -54,12 +53,12 @@ export default function Patio() {
     ]
 
     return (
-        <View style={styles.container}>
-            <FlatList
+        <Container>
+            <List
                 data={PatioCars}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => <PatioCard patioCar={item} />}
             />
-        </View>
+        </Container>
     )
 }

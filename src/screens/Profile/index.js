@@ -1,12 +1,11 @@
 import React from 'react'
-import { Text, View } from 'react-native'
 
-import { styles } from './styles'
+import { Container, Title } from './styles'
 
-export default function Profile() {
+export default () => {
     return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Profile</Text>
-        </View>
+        <Container>
+            <Title>Profile</Title>
+        </Container>
     )
 }

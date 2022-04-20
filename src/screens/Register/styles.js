@@ -1,26 +1,16 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components'
 
-export const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        backgroundColor: theme.colors.background,
-        flex: 1,
-        justifyContent: 'center',
-        paddingVertical: 15,
-    },
-    logo: {
-        alignItems: 'flex-start',
-        justifyContent: 'flex-start',
-        marginBottom: -50,
-        marginTop: -50,
-        resizeMode: 'contain',
-        width: '35%',
-    },
-    cardsContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-        width: '95%',
-    },
-})
+export const Container = styled.View`
+    align-items: center;
+    background-color: ${({ theme }) => theme.colors.background};
+    flex: 1;
+    justify-content: center;
+    padding: 15px 0;
+`
+
+export const CardsWrapper = styled.View`
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+`

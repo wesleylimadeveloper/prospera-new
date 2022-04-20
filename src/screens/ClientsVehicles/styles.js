@@ -1,17 +1,15 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        backgroundColor: theme.colors.background,
-        flex: 1,
-        justifyContent: 'center'
-    },
-    iconsWrapper: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        marginBottom: 10,
-        width: '55%',
-    },
-})
+export const Container = styled.View`
+    align-items: center;
+    background-color: ${({ theme }) => theme.colors.background};
+    flex: 1;
+    justify-content: center;
+`
+
+export const IconsWrapper = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 55%;
+`

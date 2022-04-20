@@ -1,35 +1,35 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        alignSelf: 'center',
-        borderBottomWidth: 1,
-        borderColor: theme.colors.icon,
-        marginVertical: 10,
-        padding: 4,
-        width: '90%'
-    },
-    title: {
-        color: theme.colors.text,
-        fontFamily: theme.fonts.title,
-        fontSize: 18,
-        marginBottom: 10,
-        textAlign: 'center',
-    },
-    text: {
-        color: theme.colors.text,
-        fontFamily: theme.fonts.text,
-        fontSize: 16,
-        marginBottom: 10,
-        textAlign: 'center'
-    },
-    buttonsWrapper: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'space-between',
-        marginBottom: 5,
-        width: '90%'
-    }
-})
+export const Container = styled.View`
+    align-items: center;
+    align-self: center;
+    border-bottom-width: 1px;
+    border-color: ${({ theme }) => theme.colors.icon};
+    margin: 10px 0 10px 0;
+    padding: 4px;
+    width: 90%;
+`
+
+export const Title = styled.Text`
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.fonts.title};
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+`
+
+export const Text = styled.Text`
+    color: ${({ theme }) => theme.colors.text};
+    font-family: ${({ theme }) => theme.fonts.text};
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+`
+
+export const ButtonsWrapper = styled.View`
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 90%;
+`

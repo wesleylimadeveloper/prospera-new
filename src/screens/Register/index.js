@@ -1,16 +1,15 @@
 import React from 'react'
-import { View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import Card from '../../components/Card'
-import { styles } from './styles'
+import { Container, CardsWrapper } from './styles'
 
-export default function Register() {
+export default () => {
     const navigation = useNavigation()
 
     return (
-        <View style={styles.container}>
-            <View style={styles.cardsContainer}>
+        <Container>
+            <CardsWrapper>
                 <Card
                     iconName='construct'
                     onPress={() => navigation.navigate("ServiceRegistration")}
@@ -40,7 +39,7 @@ export default function Register() {
                     onPress={() => navigation.navigate("ProviderRegistration")}
                     title='Fornecedor'
                 />
-            </View>
-        </View>
+            </CardsWrapper>
+        </Container>
     )
 }

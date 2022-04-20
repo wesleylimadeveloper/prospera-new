@@ -1,22 +1,19 @@
-import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        alignSelf: 'center',
-        backgroundColor: '#777777',
-        borderColor: '#FFF',
-        borderRadius: 25,
-        flexDirection: 'row',
-        paddingHorizontal: 10,
-        paddingVertical: 5,
-        width: '90%',
-    },
-    input: {
-        color: theme.colors.text,
-        flex: 1,
-        fontFamily: theme.fonts.text,
-        paddingHorizontal: 10,
-    }
-})
+export const Container = styled.View`
+    align-items: center;
+    align-self: center;
+    background-color: #777777;
+    border-color: #FFF;
+    border-radius: 25px;
+    flex-direction: row;
+    padding: 5px 10px;
+    width: 90%;
+`
+
+export const Input = styled.TextInput`
+    color: ${({ theme }) => theme.colors.text};
+    flex: 1;
+    font-family: ${({ theme }) => theme.fonts.text};
+    padding: 0 10px;
+`

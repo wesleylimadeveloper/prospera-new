@@ -1,27 +1,30 @@
 import { StyleSheet } from 'react-native'
-import { theme } from '../../global/styles/theme'
+import styled from 'styled-components/native'
 
+export const Scroll = styled.ScrollView`
+    background-color: ${({ theme }) => theme.colors.background};
+`
+
+export const Container = styled.View`
+    align-items: center;
+    background-color: ${({ theme }) => theme.colors.background};
+    flex: 1;
+`
+
+export const CardsWrapper = styled.View`
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+`
+ 
 export const styles = StyleSheet.create({
-    scrollView: {
-        backgroundColor: theme.colors.background,
-    },
-    container: {
-        alignItems: 'center',
-        backgroundColor: theme.colors.background,
-        flex: 1,
-    },
     logo: {
         justifyContent: 'flex-start',
         marginBottom: -50,
         marginTop: -50,
         resizeMode: 'contain',
         width: '35%',
-    },
-    cardsContainer: {
-        alignItems: 'flex-start',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        width: '95%',
     },
 })
